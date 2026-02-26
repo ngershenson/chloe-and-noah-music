@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background: blue;
+  background: #ffffff;
+}
+
+nav {
+  background: #ffeca5;
+}
+
+.about-panel {
+  display: flex;
+}
+#panel-2 {
+  background: #ffbe73;
+}
+
+.about-panel img {
+  width: 450px;
+  height: 300px;
 }
