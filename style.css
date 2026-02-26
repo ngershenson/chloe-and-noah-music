@@ -22,14 +22,18 @@ nav {
 
 .about-panel {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   padding: 120px;
   gap: 5%;
 }
 
+#panel-1,
+#panel-3 {
+  justify-content: flex-start;
+}
 #panel-2 {
   background: #ffbe73;
+  justify-content: flex-end;
 }
 
 .about-panel img {
@@ -42,13 +46,43 @@ nav {
 
 #media-content {
   background: #ffeca5;
+  display: flex;
+  padding: 16px;
+  align-items: center;
 }
+
+#carousel {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+#selected-row img {
+  height: 400px;
+  display: none;
+}
+
+#thumbnail-row img {
+  height: 150px;
+}
+
+#selected-row .selected {
+  display: block;
+}
+
+#thumbnail-row .selected {
+  border: 2px solid black;
+}
+
 #contact {
   background: #ffbe73;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 12px;
 }
 #contact img {
-  width: 33%;
+  width: 25%;
 }
