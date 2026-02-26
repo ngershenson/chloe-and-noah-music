@@ -18,6 +18,30 @@ nav {
   padding: 16px;
   position: sticky;
   top: 0;
+  box-shadow: #666 0px 0px 24px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+}
+
+#nav-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+  padding: 12px;
+}
+
+#nav-link-container .selected {
+  border-radius: 8px;
+  background: #ffbe73;
+}
+
+img {
+  border-radius: 8px;
 }
 
 .about-panel {
@@ -82,7 +106,7 @@ nav {
   border: 2px solid black;
 }
 
-#contact {
+#contact-footer {
   background: #ffbe73;
   display: flex;
   justify-content: space-around;
