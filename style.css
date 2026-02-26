@@ -59,6 +59,12 @@ nav {
   align-items: center;
 }
 
+#selected-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 #selected-row img {
   height: 400px;
   display: none;
