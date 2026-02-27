@@ -97,9 +97,32 @@ const incrementSelection = (id) => {
   }
 };
 
+const addThumbnailListeners = () => {
+  const thumbnail1 = document.querySelector("#t-1");
+  const thumbnail2 = document.querySelector("#t-2");
+  const thumbnail3 = document.querySelector("#t-3");
+
+  thumbnail1.addEventListener("click", selectThumbnail);
+  thumbnail2.addEventListener("click", selectThumbnail);
+  thumbnail3.addEventListener("click", selectThumbnail);
+};
+
+const selectThumbnail = (e) => {
+  document
+    .querySelector(`#${selectedThumbnailId}`)
+    .classList.remove("selected");
+  e.target.classList.add("selected");
+  selectedThumbnailId = e.target.id;
+
+  document.querySelector(`#${selectedVideoId}`).classList.remove("selected");
+  selectedVideoId = selectedThumbnailId.replace("t", "m");
+  document.querySelector(`#${selectedVideoId}`).classList.add("selected");
+};
+
 const addListeners = () => {
   addLinkHoverListeners();
   addChevronListeners();
+  addThumbnailListeners();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
