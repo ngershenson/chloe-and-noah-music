@@ -14,6 +14,7 @@ body {
 }
 
 nav {
+  z-index: 100;
   background: #fff9e5;
   display: flex;
   justify-content: space-between;
@@ -63,7 +64,6 @@ a {
 #nav-link-container .selected {
   border-radius: 6px;
   background: #fcd958;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0 4px 10px; */
 }
 
 img {
