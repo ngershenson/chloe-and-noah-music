@@ -91,8 +91,8 @@ h2 {
 }
 
 #panel-1 {
-  justify-content: center;
   gap: 120px;
+  padding-left: 180px;
 }
 
 #panel-1 img {
@@ -104,7 +104,15 @@ h2 {
 
 #about-us p {
   font-size: 24px;
-  width: 30%;
+}
+
+#about-us h2 + p,
+#about-us #panel-3 p {
+  width: 40%;
+}
+
+#hero-text {
+  width: 40%;
 }
 
 #hero-text h4 + p {
@@ -117,6 +125,10 @@ h2 {
 
 #panel-2 {
   background: #ffcfa5;
+  border-radius: 24px;
+  margin: 0 180px;
+  padding: 48px 120px;
+  justify-content: space-between;
 }
 
 .about-panel img {
