@@ -176,6 +176,38 @@ h2 {
   align-items: center;
 }
 
+.selection {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.75);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.selection:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: "DM Mono";
+  letter-spacing: -3%;
+  font-size: 30px;
+}
 #thumbnail-row img {
   height: 157px;
 }
