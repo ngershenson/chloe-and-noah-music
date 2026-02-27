@@ -190,8 +190,12 @@ h2 {
   width: 40%;
 }
 
+#thumbnail-row img {
+  box-sizing: border-box;
+}
+
 #thumbnail-row .selected {
-  border: 2px solid #fcd958;
+  border: 4px solid #fcd958;
 }
 
 #contact-footer {
