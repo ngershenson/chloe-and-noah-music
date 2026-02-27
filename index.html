@@ -15,7 +15,7 @@
       <div id="nav-link-container">
         <a id="about-us-link" href="#about-us">About Us</a>
         <a id="media-content-link" href="#media-content">Media & Content</a>
-        <a id="contact-link" href="#contact">Contact</a>
+        <a id="contact-link" href="#contact-footer">Contact</a>
       </div>
     </nav>
     <div id="about-us">
@@ -52,11 +52,17 @@
     <div id="media-content">
       <div id="carousel">
         <div id="selected-row">
-          <i class="fas fa-chevron-left"></i>
+          <span id="left-stack">
+            <i class="fas fa-circle fa-stack-2x" style="color: white"></i>
+            <i class="fas fa-chevron-left fa-stack-1x"></i>
+          </span>
           <img class="selected" src="./images/go-your-own-way.png" />
           <img src="./images/kaleidoscope.png" />
           <img src="./images/silver-springs.png" />
-          <i class="fas fa-chevron-right"></i>
+          <span id="right-stack">
+            <i class="fas fa-circle fa-stack-2x" style="color: white"></i>
+            <i class="fas fa-chevron-right fa-stack-1x"></i>
+          </span>
         </div>
         <div id="thumbnail-row">
           <img class="selected" src="./images/go-your-own-way.png" />
@@ -73,8 +79,8 @@
           <p>Good Music. Good Vibes. Great Events.</p>
         </div>
         <div id="phones">
-          <p><i class="fas fa-phone"></i>Call Or Text</p>
-          <p>(717) 448-6054</p>
+          <p id="call-or-text"><i class="fas fa-phone"></i>Call Or Text</p>
+          <p id="phone-number">(717) 448-6054</p>
         </div>
         <div id="email">
           <p><i class="fas fa-envelope"></i>Email</p>
