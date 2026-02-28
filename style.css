@@ -88,7 +88,6 @@ h2 {
   font-size: 48px;
   font-weight: 400;
   white-space: nowrap;
-  width: 30%;
 }
 
 #panel-1 {
@@ -138,9 +137,11 @@ h2 {
 }
 
 #media-content {
-  background: #ffeca5;
+  position: relative;
   display: flex;
+  justify-content: space-between;
   padding: 80px;
+  padding-bottom: 200px;
   align-items: center;
 }
 
@@ -287,4 +288,29 @@ h2 {
 
 #email p {
   font-size: 18px;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  background: #ffeca5;
+  z-index: -1;
+}
+
+#panel-3 {
+  position: relative;
+}
+
+#panel-3 .circle {
+  width: 600px;
+  height: 600px;
+  left: -250px;
+  top: 150px;
+}
+
+#media-content .circle {
+  width: 900px;
+  height: 900px;
+  right: -300px;
+  top: -50px;
 }
