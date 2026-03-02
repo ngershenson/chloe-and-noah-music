@@ -143,6 +143,7 @@ h2 {
   padding: 80px;
   padding-bottom: 200px;
   align-items: center;
+  overflow-x: clip;
 }
 
 #carousel {
@@ -224,8 +225,9 @@ h2 {
 
 #thumbnail-row {
   display: flex;
-  justify-content: space-between;
-  width: 40%;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
 }
 
 #thumbnail-row img {
