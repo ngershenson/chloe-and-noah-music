@@ -363,6 +363,15 @@ h2 {
     right: -200px;
     top: -50px;
   }
+
+  #footer-title h3 {
+    font-size: 28px;
+  }
+
+  #email a,
+  #phone-number {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -371,11 +380,15 @@ h2 {
     height: 300px;
   }
 
+  #panel-2 {
+    padding: 48px 80px;
+  }
   h2 {
     font-size: 32px;
   }
 
-  #panel-2 p {
+  #panel-2 p,
+  #panel-3 p {
     font-size: 18px;
   }
 
