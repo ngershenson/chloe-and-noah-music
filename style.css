@@ -201,6 +201,7 @@ h2 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+  text-align: center;
 }
 
 .selection:hover .overlay {
@@ -209,6 +210,7 @@ h2 {
 }
 
 .overlay a {
+  padding: 0 8px;
   text-decoration: none;
   color: #fafafa;
   font-family: "DM Mono";
@@ -372,6 +374,10 @@ h2 {
   #phone-number {
     font-size: 20px;
   }
+
+  .overlay a {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -412,7 +418,7 @@ h2 {
     width: 500px;
     height: 500px;
     left: -200px;
-    top: 125px;
+    top: 25px;
   }
 
   #media-content .circle {
@@ -420,5 +426,13 @@ h2 {
     height: 750px;
     right: -250px;
     top: -50px;
+  }
+
+  .overlay a {
+    font-size: 24px;
+  }
+
+  #nav-link-container a {
+    padding: 8px 16px;
   }
 }
